@@ -46,16 +46,26 @@ class VoiceCurveView: UIView {
         audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, error:nil)
         
         var url = NSURL .fileURLWithPath(self.fullPathAtCache("record.wav"))
+        var existedData = NSData(contentsOfURL: url!, options: NSDataReadingOptions.DataReadingMapped, error: nil)
+        if existedData != nil {
+            let fm = NSFileManager .defaultManager()
+            fm .removeItemAtPath("ddd", error: nil)
+        }
+        
+        self.recoder = AVAudioRecorder(URL: url, settings:recordSettings, error: nil)
         
     }
     
     func fullPathAtCache(fileName:NSString)-> NSString{
-        var pathArray : Array = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true)
-        var path: String = pathArray.objectAtIndex(0)
+        var pathArray = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true) as NSArray
+        var path = pathArray.objectAtIndex(0) as String
         let fm  = NSFileManager .defaultManager()
-        if fm.fileExistsAtPath(path){
-            
+        if fm.fileExistsAtPath(path) != true {
+            if fm .createDirectoryAtPath(path, withIntermediateDirectories: true, attributes: nil, error: nil) != true {
+                println("create dir path = \(path)")
+            }
         }
+        return path .stringByAppendingPathComponent(fileName)
     }
 
 
