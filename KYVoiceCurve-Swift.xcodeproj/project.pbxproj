@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FCD1F7D1AD432CD000082C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F7C1AD432CD000082C2 /* AppDelegate.swift */; };
+		5FCD1F7F1AD432CD000082C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F7E1AD432CD000082C2 /* ViewController.swift */; };
+		5FCD1F821AD432CD000082C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F801AD432CD000082C2 /* Main.storyboard */; };
+		5FCD1F841AD432CD000082C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F831AD432CD000082C2 /* Images.xcassets */; };
+		5FCD1F871AD432CD000082C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F851AD432CD000082C2 /* LaunchScreen.xib */; };
+		5FCD1F931AD432CD000082C2 /* KYVoiceCurve_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F921AD432CD000082C2 /* KYVoiceCurve_SwiftTests.swift */; };
+		5FCD1F9D1AD43305000082C2 /* VoiceCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F9C1AD43305000082C2 /* VoiceCurveView.swift */; };
+		5FCD1F9F1AD435F5000082C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCD1F9E1AD435F5000082C2 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FCD1F8D1AD432CD000082C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FCD1F6F1AD432CD000082C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FCD1F761AD432CD000082C2;
+			remoteInfo = "KYVoiceCurve-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5FCD1F771AD432CD000082C2 /* KYVoiceCurve-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KYVoiceCurve-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FCD1F7B1AD432CD000082C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FCD1F7C1AD432CD000082C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FCD1F7E1AD432CD000082C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FCD1F811AD432CD000082C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FCD1F831AD432CD000082C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5FCD1F861AD432CD000082C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5FCD1F8C1AD432CD000082C2 /* KYVoiceCurve-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KYVoiceCurve-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FCD1F911AD432CD000082C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FCD1F921AD432CD000082C2 /* KYVoiceCurve_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYVoiceCurve_SwiftTests.swift; sourceTree = "<group>"; };
+		5FCD1F9C1AD43305000082C2 /* VoiceCurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceCurveView.swift; sourceTree = "<group>"; };
+		5FCD1F9E1AD435F5000082C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FCD1F741AD432CD000082C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FCD1F9F1AD435F5000082C2 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCD1F891AD432CD000082C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FCD1F6E1AD432CD000082C2 = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F9E1AD435F5000082C2 /* AVFoundation.framework */,
+				5FCD1F791AD432CD000082C2 /* KYVoiceCurve-Swift */,
+				5FCD1F8F1AD432CD000082C2 /* KYVoiceCurve-SwiftTests */,
+				5FCD1F781AD432CD000082C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FCD1F781AD432CD000082C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F771AD432CD000082C2 /* KYVoiceCurve-Swift.app */,
+				5FCD1F8C1AD432CD000082C2 /* KYVoiceCurve-SwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FCD1F791AD432CD000082C2 /* KYVoiceCurve-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F7C1AD432CD000082C2 /* AppDelegate.swift */,
+				5FCD1F7E1AD432CD000082C2 /* ViewController.swift */,
+				5FCD1F9C1AD43305000082C2 /* VoiceCurveView.swift */,
+				5FCD1F801AD432CD000082C2 /* Main.storyboard */,
+				5FCD1F831AD432CD000082C2 /* Images.xcassets */,
+				5FCD1F851AD432CD000082C2 /* LaunchScreen.xib */,
+				5FCD1F7A1AD432CD000082C2 /* Supporting Files */,
+			);
+			path = "KYVoiceCurve-Swift";
+			sourceTree = "<group>";
+		};
+		5FCD1F7A1AD432CD000082C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F7B1AD432CD000082C2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FCD1F8F1AD432CD000082C2 /* KYVoiceCurve-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F921AD432CD000082C2 /* KYVoiceCurve_SwiftTests.swift */,
+				5FCD1F901AD432CD000082C2 /* Supporting Files */,
+			);
+			path = "KYVoiceCurve-SwiftTests";
+			sourceTree = "<group>";
+		};
+		5FCD1F901AD432CD000082C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F911AD432CD000082C2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FCD1F761AD432CD000082C2 /* KYVoiceCurve-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FCD1F961AD432CD000082C2 /* Build configuration list for PBXNativeTarget "KYVoiceCurve-Swift" */;
+			buildPhases = (
+				5FCD1F731AD432CD000082C2 /* Sources */,
+				5FCD1F741AD432CD000082C2 /* Frameworks */,
+				5FCD1F751AD432CD000082C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KYVoiceCurve-Swift";
+			productName = "KYVoiceCurve-Swift";
+			productReference = 5FCD1F771AD432CD000082C2 /* KYVoiceCurve-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FCD1F8B1AD432CD000082C2 /* KYVoiceCurve-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FCD1F991AD432CD000082C2 /* Build configuration list for PBXNativeTarget "KYVoiceCurve-SwiftTests" */;
+			buildPhases = (
+				5FCD1F881AD432CD000082C2 /* Sources */,
+				5FCD1F891AD432CD000082C2 /* Frameworks */,
+				5FCD1F8A1AD432CD000082C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FCD1F8E1AD432CD000082C2 /* PBXTargetDependency */,
+			);
+			name = "KYVoiceCurve-SwiftTests";
+			productName = "KYVoiceCurve-SwiftTests";
+			productReference = 5FCD1F8C1AD432CD000082C2 /* KYVoiceCurve-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FCD1F6F1AD432CD000082C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Kitten Yang";
+				TargetAttributes = {
+					5FCD1F761AD432CD000082C2 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					5FCD1F8B1AD432CD000082C2 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 5FCD1F761AD432CD000082C2;
+					};
+				};
+			};
+			buildConfigurationList = 5FCD1F721AD432CD000082C2 /* Build configuration list for PBXProject "KYVoiceCurve-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FCD1F6E1AD432CD000082C2;
+			productRefGroup = 5FCD1F781AD432CD000082C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FCD1F761AD432CD000082C2 /* KYVoiceCurve-Swift */,
+				5FCD1F8B1AD432CD000082C2 /* KYVoiceCurve-SwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FCD1F751AD432CD000082C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FCD1F821AD432CD000082C2 /* Main.storyboard in Resources */,
+				5FCD1F871AD432CD000082C2 /* LaunchScreen.xib in Resources */,
+				5FCD1F841AD432CD000082C2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCD1F8A1AD432CD000082C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FCD1F731AD432CD000082C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FCD1F7F1AD432CD000082C2 /* ViewController.swift in Sources */,
+				5FCD1F7D1AD432CD000082C2 /* AppDelegate.swift in Sources */,
+				5FCD1F9D1AD43305000082C2 /* VoiceCurveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCD1F881AD432CD000082C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FCD1F931AD432CD000082C2 /* KYVoiceCurve_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FCD1F8E1AD432CD000082C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FCD1F761AD432CD000082C2 /* KYVoiceCurve-Swift */;
+			targetProxy = 5FCD1F8D1AD432CD000082C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FCD1F801AD432CD000082C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FCD1F811AD432CD000082C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FCD1F851AD432CD000082C2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FCD1F861AD432CD000082C2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FCD1F941AD432CD000082C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FCD1F951AD432CD000082C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FCD1F971AD432CD000082C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "KYVoiceCurve-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FCD1F981AD432CD000082C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "KYVoiceCurve-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5FCD1F9A1AD432CD000082C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KYVoiceCurve-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYVoiceCurve-Swift.app/KYVoiceCurve-Swift";
+			};
+			name = Debug;
+		};
+		5FCD1F9B1AD432CD000082C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KYVoiceCurve-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYVoiceCurve-Swift.app/KYVoiceCurve-Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FCD1F721AD432CD000082C2 /* Build configuration list for PBXProject "KYVoiceCurve-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FCD1F941AD432CD000082C2 /* Debug */,
+				5FCD1F951AD432CD000082C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FCD1F961AD432CD000082C2 /* Build configuration list for PBXNativeTarget "KYVoiceCurve-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FCD1F971AD432CD000082C2 /* Debug */,
+				5FCD1F981AD432CD000082C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FCD1F991AD432CD000082C2 /* Build configuration list for PBXNativeTarget "KYVoiceCurve-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FCD1F9A1AD432CD000082C2 /* Debug */,
+				5FCD1F9B1AD432CD000082C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FCD1F6F1AD432CD000082C2 /* Project object */;
+}
