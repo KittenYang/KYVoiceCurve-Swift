@@ -18,11 +18,11 @@ class VoiceCurveView: UIView {
     let ScreenHeight = UIScreen.mainScreen().bounds.size.height
  
     var recordSettings = [
-        AVFormatIDKey: kAudioFormatAppleLossless,
+        AVFormatIDKey: kAudioFormatLinearPCM,
         AVEncoderAudioQualityKey : AVAudioQuality.Max.rawValue,
-        AVEncoderBitRateKey : 320000,
-        AVNumberOfChannelsKey: 2,
-        AVSampleRateKey : 44100.0
+        AVEncoderBitRateKey : 8000.0,
+        AVNumberOfChannelsKey: 1,
+        AVSampleRateKey : 16
     ]
     
     var SUPERVIEW : UIView
@@ -36,16 +36,7 @@ class VoiceCurveView: UIView {
     var layer4 : CAShapeLayer
     var layer5 : CAShapeLayer
     
-    
-//    var recordSettings =
-//    [
-//        AVFormatIDKey : kAudioFormatLinearPCM,
-//        AVEncoderBitRateKey:16,
-//        AVEncoderAudioQualityKey : AVAudioQuality.Max.rawValue,
-//        AVSampleRateKey : 8000.0,
-//        AVNumberOfChannelsKey : 1,
-//    ]
-    
+
     
     init(frame: CGRect,sv:UIView) {
         
@@ -129,7 +120,7 @@ class VoiceCurveView: UIView {
             return
         }
         let audioSession = AVAudioSession .sharedInstance()
-//        let err = NSError()
+        let err = NSError()
         audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, error:nil)
         
         var url = NSURL .fileURLWithPath(self.fullPathAtCache("record.wav"))
