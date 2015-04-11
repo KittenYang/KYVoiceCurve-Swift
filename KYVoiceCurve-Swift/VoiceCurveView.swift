@@ -25,35 +25,35 @@ class VoiceCurveView: UIView {
         AVSampleRateKey : 16
     ]
     
-    var SUPERVIEW : UIView
-    var recoder : AVAudioRecorder
-    var displayLink : CADisplayLink
+    var SUPERVIEW : UIView!
+    var recoder : AVAudioRecorder!
+    var displayLink : CADisplayLink!
     
-    var blurView : UIVisualEffectView
-    var layer1 : CAShapeLayer
-    var layer2 : CAShapeLayer
-    var layer3 : CAShapeLayer
-    var layer4 : CAShapeLayer
-    var layer5 : CAShapeLayer
+    var blurView : UIVisualEffectView!
+    var layer1 : CAShapeLayer!
+    var layer2 : CAShapeLayer!
+    var layer3 : CAShapeLayer!
+    var layer4 : CAShapeLayer!
+    var layer5 : CAShapeLayer!
     
-
     
     init(frame: CGRect,sv:UIView) {
         
-        SUPERVIEW = sv
-        recoder = AVAudioRecorder()
-        displayLink = CADisplayLink()
-        blurView = UIVisualEffectView()
-        layer1 = CAShapeLayer()
-        layer2 = CAShapeLayer()
-        layer3 = CAShapeLayer()
-        layer4 = CAShapeLayer()
-        layer5 = CAShapeLayer()
+//        SUPERVIEW = sv
+//        recoder = AVAudioRecorder()
+//        displayLink = CADisplayLink()
+//        blurView = UIVisualEffectView()
+//        layer1 = CAShapeLayer()
+//        layer2 = CAShapeLayer()
+//        layer3 = CAShapeLayer()
+//        layer4 = CAShapeLayer()
+//        layer5 = CAShapeLayer()
         
         super.init()
         
         self.setUp()
         sv.addSubview(self)
+        
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -66,7 +66,7 @@ class VoiceCurveView: UIView {
         self.backgroundColor = UIColor.clearColor()
     
         self.blurView =  UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.Dark))
-        self.blurView.frame = self.frame
+        self.blurView!.frame = self.frame
         var tapGes = UITapGestureRecognizer(target: self, action: "dismiss")
         self.blurView.addGestureRecognizer(tapGes)
         self.blurView.alpha = 0.0
@@ -122,14 +122,14 @@ class VoiceCurveView: UIView {
         let err = NSError()
         audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, error:nil)
         
-        var url = NSURL .fileURLWithPath(self.fullPathAtCache("record.wav"))
+        var url = NSURL .fileURLWithPath(self.fullPathAtCache("record.wav") as String)
         var existedData = NSData(contentsOfURL: url!, options: NSDataReadingOptions.DataReadingMapped, error: nil)
         if existedData != nil {
             let fm = NSFileManager .defaultManager()
             fm .removeItemAtPath("ddd", error: nil)
         }
         
-        self.recoder = AVAudioRecorder(URL: url, settings:recordSettings, error: nil)
+        self.recoder = AVAudioRecorder(URL: url, settings:recordSettings as [NSObject : AnyObject], error: nil)
         self.recoder.meteringEnabled = true
         self.recoder.record()
         self.recoder.prepareToRecord()
@@ -140,14 +140,14 @@ class VoiceCurveView: UIView {
     
     func fullPathAtCache(fileName:NSString)-> NSString{
         var pathArray = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true) as NSArray
-        var path = pathArray.objectAtIndex(0) as String
+        var path = pathArray.objectAtIndex(0) as! String
         let fm  = NSFileManager .defaultManager()
         if fm.fileExistsAtPath(path) != true {
             if fm .createDirectoryAtPath(path, withIntermediateDirectories: true, attributes: nil, error: nil) != true {
                 println("create dir path = \(path)")
             }
         }
-        return path .stringByAppendingPathComponent(fileName)
+        return path .stringByAppendingPathComponent(fileName as String)
     }
 
     //------重绘函数-----
