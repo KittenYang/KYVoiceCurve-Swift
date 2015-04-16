@@ -36,9 +36,15 @@ class VoiceCurveView: UIView {
     var layer4 : CAShapeLayer!
     var layer5 : CAShapeLayer!
     
+    convenience init?(frame:CGRect,sv:UIView){
+        SUPERVIEW = sv
+        self.setUp()
+        sv.addSubview(self)
+        super.init(frame: frame)
+    }
     
-    init(frame: CGRect,sv:UIView) {
-        
+//    init(frame: CGRect,sv:UIView) {
+    
 //        SUPERVIEW = sv
 //        recoder = AVAudioRecorder()
 //        displayLink = CADisplayLink()
@@ -48,13 +54,13 @@ class VoiceCurveView: UIView {
 //        layer3 = CAShapeLayer()
 //        layer4 = CAShapeLayer()
 //        layer5 = CAShapeLayer()
-        
-        super.init()
-        
-        self.setUp()
-        sv.addSubview(self)
-        
-    }
+//        
+//        super.init()
+//        
+//        self.setUp()
+//        sv.addSubview(self)
+//        
+//    }
 
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
