@@ -40,7 +40,7 @@ class VoiceCurveView: UIView {
         SUPERVIEW = sv
         self.setUp()
         sv.addSubview(self)
-        super.init(frame: frame)
+        self.init(frame: frame)
     }
     
 //    init(frame: CGRect,sv:UIView) {
