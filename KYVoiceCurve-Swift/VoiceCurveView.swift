@@ -37,10 +37,10 @@ class VoiceCurveView: UIView {
     var layer5 : CAShapeLayer!
     
     convenience init?(frame:CGRect,sv:UIView){
+        self.init(frame: frame,sv:sv)
         SUPERVIEW = sv
         self.setUp()
         sv.addSubview(self)
-        self.init(frame: frame)
     }
     
 //    init(frame: CGRect,sv:UIView) {
